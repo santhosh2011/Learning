@@ -7,7 +7,7 @@ class GenericQueue<T> {
     
     private List<T> list;
     
-    public Queue(){
+    public GenericQueue(){
         this.list = new LinkedList<T>();
     }
     
@@ -26,7 +26,7 @@ class GenericQueue<T> {
     }
     
     public static void main(String[] args) {
-        Queue<Integer> queue = new Queue<Integer>();
+        GenericQueue<Integer> queue = new GenericQueue<Integer>();
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
